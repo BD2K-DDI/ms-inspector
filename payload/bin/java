@@ -1,0 +1,4 @@
+#!/bin/bash
+# execute KNIME's java to run PIA with the commands specified in the CTDs
+echo ${@}
+exec "java" -jar "${INSPECTOR}" ${@}

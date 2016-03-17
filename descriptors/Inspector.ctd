@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tool version="2.0"
+		name="Inspector"
+		category="Visualization"
+		docurl="https://github.com/PRIDE-Toolsuite/pride-inspector">
+	
+	<executableName>java</executableName>
+	<description><![CDATA[Visualization and Quality Assessment of PRoteomics and Metabolomics data]]></description>
+	<manual><![CDATA[Visualization and Quality Assessment of PRoteomics and Metabolomics data]]></manual>
+	
+    <cli>
+        <clielement required="false" isList="true" optionIdentifier="-mzFile">
+            <mapping referenceName="Inspector.mzFile"/>
+        </clielement>
+        <clielement required="false" isList="true" optionIdentifier="-idFile">
+            <mapping referenceName="Inspector.idFile"/>
+        </clielement>
+    </cli>
+    
+	<PARAMETERS version="1.6.2"
+			xsi:noNamespaceSchemaLocation="http://open-ms.sourceforge.net/schemas/Param_1_6_2.xsd"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <NODE description="Adds a peptide level filter to a specified file (0 for overview), which will be used in all further steps." name="Inspector">
+            <ITEM value="" advanced="false" required="false" supported_formats="*.mzML,*.mgf,*.mzml, *.MGF, *.pkl, *.ms2,*.MZML" description="Path to the files wich contains the spectra information" type="input-file" name="mzFile"/>
+            <ITEM value="" advanced="false" required="false" supported_formats="*.xml,*.mztab, *.mzid, *.mzIdentML" description="Path to the files wich contains the results information" type="input-file" name="idFile"/>
+        </NODE>
+    </PARAMETERS>
+</tool>

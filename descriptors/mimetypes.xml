@@ -1,0 +1,9 @@
+<mimetypes xmlns="http://www.ball-project.org/mimetypes">
+ <mimetype name="MZIDENTML" binary="false" description="HUPO-PSI mass spectrometry identification format" ext="mzid"/>
+ <mimetype name="MZIDENTML" binary="false" description="HUPO-PSI mass spectrometry identification format" ext="mzIdentML"/>
+ <mimetype name="MZTAB" binary="false" description="HUPO-PSI tab separated exchange format" ext="mzTab"/>
+ <mimetype name="MZML" binary="false" description="HUPO-PSI tab separated exchange format" ext="mzML"/>
+ <mimetype name="MZML" binary="false" description="HUPO-PSI tab separated exchange format" ext="mzml"/>
+ <mimetype name="MGF" binary="false" description="HUPO-PSI tab separated exchange format" ext="mgf"/>
+ <mimetype name="PRIDE XML" binary="false" description="HUPO-PSI tab separated exchange format" ext="xml"/>
+</mimetypes>
